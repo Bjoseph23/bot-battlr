@@ -2,3 +2,34 @@
   background-color:rgb(169, 233, 21);
   padding: 150px;
 }
+
+.card{
+  border-radius: 9px;
+  background-color: rgb(111, 111, 131);
+  position: relative;
+
+}
+.card:hover {
+  color: aliceblue;
+  background-color: #574c96;
+}
+
+.list{
+  display: flex;
+  width: 900px;
+  gap: 1rem;
+  /* grid-template-columns: 
+  repeat(auto-fit,minmax(300px, 1fr)); */
+}
+
+.bot-image{
+  background-color: rgb(179, 170, 170);
+}
+
+.bot-image:hover {
+  background-color: rgb(29, 29, 29);
+}
+
+footer{
+  display: flex;
+}

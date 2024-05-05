@@ -17,12 +17,16 @@ function BotSelection() {
 
     return (
         <div className="list">
-          BotSelection
           {bots.map((bot) => (
             <div key={bot.id}  className="card">
-            <img src={bot.avatar_url} alt="This is a bot" />
+            <img class="bot-image"src={bot.avatar_url} alt="This is a bot" />
             <h3>Name: {bot.name}</h3>
             <h4>Bot Class: {bot.bot_class}</h4>
+            <footer>
+                <p> HP {bot.health}</p>
+                <p>DMG {bot.damage} </p>
+                <p>ARM: {bot.armor}</p>
+            </footer>
           </div>
           ))}
         </div>
