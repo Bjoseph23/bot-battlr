@@ -1,14 +1,23 @@
-.selected{
+
+.selected{  
   background-color:rgb(169, 233, 21);
-  padding: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  grid-template-columns: 
+  repeat(auto-fit,minmax(300px, 1fr));
+  margin-top: 30px;
+
 }
 
 .card{
-  border-radius: 30px;
+  border-radius: 9px;
   background-color: rgb(111, 111, 131);
   position: relative;
-
+  margin-top: 30px;
 }
+
 .card:hover {
   color: aliceblue;
   background-color: #574c96;
@@ -16,11 +25,14 @@
 
 .list{
   display: flex;
-  width: 900px;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
-  /* grid-template-columns: 
-  repeat(auto-fit,minmax(300px, 1fr)); */
+  grid-template-columns: 
+  repeat(auto-fit,minmax(300px, 1fr));
   margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 
 .bot-image{
@@ -33,4 +45,19 @@
 
 footer{
   display: flex;
+}
+
+#icon{
+  margin-right: 20px;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.Title{
+  text-align: right;
+  height:500px 
+}
+.sort{
+  padding: 40px;
+  background-color: rgb(66, 54, 39);
+margin-top: 10px;
 }
