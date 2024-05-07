@@ -1,14 +1,17 @@
 import React from "react";
 
 function MyArmy({army, onRemoveBot}){
+  
     
     return (
         <div className="selected">
           {army.map((bot) => (
-            <div key={bot.id} className="card" onClick={() => onRemoveBot(bot)}>
+            <div key={bot.id} className="card" >
               <img className="bot-image" src={bot.avatar_url} alt="This is a bot" />
               <h3>Name: {bot.name}</h3>
-              <h4>Bot Class: {bot.bot_class}</h4>
+              <h5>Catchphrase: {bot.catchphrase}</h5>
+              <h4 >Bot Class: {bot.bot_class
+              }</h4>
               <footer>
                 <i id="icon" className="bx bxs-heart">
                   {bot.health}
@@ -19,6 +22,11 @@ function MyArmy({army, onRemoveBot}){
                 <i id="icon" className="bx bxs-shield-x">
                   {bot.damage}
                 </i>
+                <button
+                className="ui mini red button"
+                onClick={() => onRemoveBot(bot)}>
+                  x
+                </button>
               </footer>
             </div>
           ))}

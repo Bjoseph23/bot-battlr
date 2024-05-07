@@ -37,6 +37,7 @@
 
 .bot-image{
   background-color: rgb(179, 170, 170);
+  width: auto;
 }
 
 .bot-image:hover {
