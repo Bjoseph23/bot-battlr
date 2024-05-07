@@ -9,7 +9,6 @@ function MyArmy({army, onRemoveBot}){
             <div key={bot.id} className="card" >
               <img className="bot-image" src={bot.avatar_url} alt="This is a bot" />
               <h3>Name: {bot.name}</h3>
-              <h5>Catchphrase: {bot.catchphrase}</h5>
               <h4 >Bot Class: {bot.bot_class
               }</h4>
               <footer>
